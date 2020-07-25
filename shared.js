@@ -6,7 +6,7 @@ var toggleCheckout = document.querySelectorAll(".cart-button");
 
 for (var i = 0; i < toggleCheckout.length; i++) {
     toggleCheckout[i].addEventListener("click", function () {
-      checkout.style.display = "block";
+      checkout.style.transform = "translateY(0)";
       backdrop.style.display = "block";
     });
   }
@@ -18,7 +18,7 @@ toggleMenu.addEventListener("click", function () {
 
 backdrop.addEventListener("click", function () {
   backdrop.style.display = "none";
-  checkout.style.display = "none";
+  checkout.style.transform = "translateY(-300%)";
   showMenu.style.transform = "translateX(-100%)";
 });
 
