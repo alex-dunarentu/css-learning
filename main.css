@@ -27,31 +27,33 @@ body {
 }
 
 .main-header__nav-list {
+  display: flex;
   list-style-type: none;
   margin-right: 1rem;
   padding: 0;
 }
 
 .main-header__nav-items {
-  display: inline-block;
+  display: flex;
 
   margin: 0 1rem;
 }
 
 .main-header__nav-item {
+  text-align: center;
   text-decoration: none;
-  width:120px;
+  min-width: 120px;
   border-radius: 0.3rem;
-  padding:0 0.5rem;
+  padding: 0.2rem 0.5rem;
   color: black;
   background-color: white;
 }
 
 .main-header__nav-item:hover,
 .main-header__nav-item:active {
-    font-weight: bold;
-    color: white;
-    background-color: black;
+  font-weight: bold;
+  color: white;
+  background-color: black;
 }
 
 main {
