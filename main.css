@@ -91,6 +91,7 @@ label {
 
 .checkout {
   position: fixed;
+  display:none;
   text-align: center;
   z-index: 200;
   right: 0;

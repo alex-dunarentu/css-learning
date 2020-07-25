@@ -3,6 +3,12 @@ var toggleMenu = document.querySelector(".hamburger-menu");
 var showMenu = document.querySelector(".mobile__nav");
 var checkout = document.querySelector(".checkout");
 var toggleCheckout = document.querySelectorAll(".cart-button");
+setTimeout(function () {
+  showMenu.style.display = "block";
+  if (checkout) {
+    checkout.style.display = "block";
+  }
+}, 1);
 if (toggleCheckout) {
   for (var i = 0; i < toggleCheckout.length; i++) {
     toggleCheckout[i].addEventListener("click", function () {
