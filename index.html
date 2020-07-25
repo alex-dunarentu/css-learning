@@ -1,48 +1,234 @@
 <!DOCTYPE html>
-<head>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Pizza App</title>
-    <link rel="shortcut icon" href="pizza-icon.jpg" />
-    <link rel="stylesheet" href="main.css" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Montserrat:400,700"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <header class="main-header">
-      <a href="index.html" class="main-header__image-container">
-        <img
-          src="icon.png"
-          alt="Your favorite pizza website"
-          class="main-header__image"
-        />
-      </a>
-      <nav class="main-header__nav">
-        <ul class="main-header__nav-list">
-          <li class="main-header__nav-items">
-            <a href="contact.html" class="main-header__nav-item">Contact Us</a>
-          </li>
-          <li class="main-header__nav-items">
-            <a href="delivery.html" class="main-header__nav-item">Delivery</a>
-          </li>
-          <li class="main-header__nav-items">
-            <a href="restaurants.html" class="main-header__nav-item">Restaurants</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
-    <main>
-      <div class="main-content">
 
-      </div>
-      <footer>
-        <a href="#" alt="Terms & Conditions" class="footer-content"
-          >Terms & Conditions</a
-        >
-      </footer>
-    </main>
-  </body>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pizza App</title>
+  <link rel="shortcut icon" href="images/pizza-icon.jpg" />
+  <link rel="stylesheet" href="main.css" />
+  <link rel="stylesheet" href="shared.css" />
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" />
 </head>
+
+<body>
+  <div class="backdrop"></div>
+  <div class="checkout">
+    <h1 class="checkout-title">Doresti sa continui cumparaturile?</h1>
+    <div class="checkout-actions">
+      <a href="index.html" class="checkout-action">Da</a>
+      <button class="checkout-action negative" type="button">
+        Vizualizeaza cosul
+      </button>
+    </div>
+  </div>
+  <header class="main-header">
+    <button class="hamburger-menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <a href="index.html" class="main-header__image-container">
+      <img src="images/icon.png" alt="Your favorite pizza website" class="main-header__image" />
+    </a>
+    <nav class="main-header__nav">
+      <ul class="main-header__nav-list">
+        <li class="main-header__nav-items">
+          <a href="contact/index.html" class="main-header__nav-item">Contact Us</a>
+        </li>
+        <li class="main-header__nav-items">
+          <a href="delivery/index.html" class="main-header__nav-item">Delivery</a>
+        </li>
+        <li class="main-header__nav-items">
+          <a href="restaurants/index.html" class="main-header__nav-item">Restaurants</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <nav class="mobile__nav">
+    <ul class="mobile__nav-list">
+      <li class="mobile__nav__nav-items">
+        <a href="contact/index.html" class="mobile__nav__nav-item">Contact Us</a>
+      </li>
+      <li class="mobile__nav__nav-items">
+        <a href="delivery/index.html" class="mobile__nav__nav-item">Delivery</a>
+      </li>
+      <li class="mobile__nav__nav-items">
+        <a href="restaurants/index.html" class="mobile__nav__nav-item">Restaurants</a>
+      </li>
+    </ul>
+  </nav>
+
+  <main>
+    <div class="main-content">
+      <div class="products">
+        <div class="product">
+          <div class="product-image">
+          </div>
+          <div class="product-description">
+            <h1>Capriciosa</h1>
+            <p>Sos de Pizza, 100% Mozzarella, Șuncă, Ciuperci</p>
+            <div class="choice">
+              <label for="size">Marime</label>
+              <select id="size">
+                <option value="25">25cm</option>
+                <option value="30">30cm</option>
+                <option value="40">40cm</option>
+              </select>
+            </div>
+            <div class="cart">
+              <h2>Add to cart</h2>
+              <button class = "cart-button"><img src="images/shopping-cart.png"> </button>
+            </div>
+            </div>
+        </div>
+        <div class="product">
+          <div class="product-image image2">
+          </div>
+          <div class="product-description">
+            <h1>Casei</h1>
+            <p>Sos de Pizza, Porumb, Masline, Ciuperci</p>
+            <div class="choice">
+              <label for="size">Marime</label>
+              <select id="size">
+                <option value="25">25cm</option>
+                <option value="30">30cm</option>
+                <option value="40">40cm</option>
+              </select>
+            </div>
+            <div class="cart">
+              <h2>Add to cart</h2>
+              <button class = "cart-button"><img src="images/shopping-cart.png"> </button>
+            </div>
+          </div>
+        </div>
+        <div class="product">
+          <div class="product-image">
+          </div>
+          <div class="product-description">
+            <h1>Diavola</h1>
+            <p>Sos de Pizza, Salam picant, Rosii, Ciuperci</p>
+            <div class="choice">
+              <label for="size">Marime</label>
+              <select id="size">
+                <option value="25">25cm</option>
+                <option value="30">30cm</option>
+                <option value="40">40cm</option>
+              </select>
+            </div>
+            <div class="cart">
+              <h2>Add to cart</h2>
+              <button class = "cart-button"><img src="images/shopping-cart.png"> </button>
+            </div>
+          </div>
+        </div>
+        <div class="product">
+          <div class="product-image image2">
+          </div>
+          <div class="product-description">
+            <h1>Fresh</h1>
+            <p>Sos de Pizza, Salam picant, Ciuperci</p>
+            <div class="choice">
+              <label for="size">Marime</label>
+              <select id="size">
+                <option value="25">25cm</option>
+                <option value="30">30cm</option>
+                <option value="40">40cm</option>
+              </select>
+            </div>
+            <div class="cart">
+              <h2>Add to cart</h2>
+              <button class = "cart-button"><img src="images/shopping-cart.png"> </button>
+            </div>
+          </div>
+        </div>
+        <div class="product">
+          <div class="product-image">
+          </div>
+          <div class="product-description">
+            <h1>Capriciosa</h1>
+            <p>Sos de Pizza, Mozzarella, Șuncă, Roșii, Ciuperci</p>
+            <div class="choice">
+              <label for="size">Marime</label>
+              <select id="size">
+                <option value="25">25cm</option>
+                <option value="30">30cm</option>
+                <option value="40">40cm</option>
+              </select>
+            </div>
+            <div class="cart">
+              <h2>Add to cart</h2>
+              <button class = "cart-button"><img src="images/shopping-cart.png"> </button>
+            </div>
+          </div>
+        </div>
+        <div class="product">
+          <div class="product-image image2">
+          </div>
+          <div class="product-description">
+            <h1>Casei</h1>
+            <p>Sos de Pizza, Porumb, Masline, Ciuperci</p>
+            <div class="choice">
+              <label for="size">Marime</label>
+              <select id="size">
+                <option value="25">25cm</option>
+                <option value="30">30cm</option>
+                <option value="40">40cm</option>
+              </select>
+            </div>
+            <div class="cart">
+              <h2>Add to cart</h2>
+              <button class = "cart-button"><img src="images/shopping-cart.png"> </button>
+            </div>
+          </div>
+        </div>
+        <div class="product">
+          <div class="product-image">
+          </div>
+          <div class="product-description">
+            <h1>Diavola</h1>
+            <p>Sos de Pizza, Salam picant, Ciuperci</p>
+            <div class="choice">
+              <label for="size">Marime</label>
+              <select id="size">
+                <option value="25">25cm</option>
+                <option value="30">30cm</option>
+                <option value="40">40cm</option>
+              </select>
+            </div>
+            <div class="cart">
+              <h2>Add to cart</h2>
+              <button class = "cart-button"><img src="images/shopping-cart.png"> </button>
+            </div>
+          </div>
+        </div>
+        <div class="product">
+          <div class="product-image image2">
+          </div>
+          <div class="product-description">
+            <h1>Fresh</h1>
+            <p>Sos de Pizza, Salam picant, Ciuperci</p>
+            <div class="choice">
+              <label for="size">Marime</label>
+              <select id="size">
+                <option value="25">25cm</option>
+                <option value="30">30cm</option>
+                <option value="40">40cm</option>
+              </select>
+            </div>
+            <div class="cart">
+              <h2>Add to cart</h2>
+              <button class = "cart-button"><img src="images/shopping-cart.png"> </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <a href="#" alt="Terms & Conditions" class="footer-content">Terms & Conditions</a>
+    </footer>
+  </main>
+  <script src="shared.js"></script>
+</body>
+
+</html>
