@@ -8,7 +8,7 @@ body {
 .main-header {
   position: fixed;
   top: 0;
-  width: 100%;
+  width: 100vw;
   z-index: 1;
   height: 4rem;
   display: flex;
