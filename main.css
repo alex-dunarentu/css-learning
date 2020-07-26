@@ -193,6 +193,7 @@ label {
   .menu h2 {
     position: fixed;
     right:2%;
+    z-index: 1;
     border-top-right-radius: 1rem;
 
   }

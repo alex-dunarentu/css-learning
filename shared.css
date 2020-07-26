@@ -81,6 +81,8 @@ main {
 
 footer {
   display: flex;
+  position: relative;
+  z-index: 2;
   width: 100%;
   justify-content: center;
   align-items: center;
